@@ -9,7 +9,7 @@ library(tmap)
 # Paràmetres
 wd <- dirname(rstudioapi::getSourceEditorContext()$path)
 searchTerm <- "#iiff"
-n_tweets <- 10000
+n_tweets <- 3600
 
 # Claus API
 keys_path <- paste(wd,"/keys.csv", sep="")
@@ -67,7 +67,7 @@ for (i in seq(1, nrow(addresses))){
 }
 
 # Exportació dels tuits
-tweets_file <- paste(wd,"/tweets",searchTerm,".csv", sep = "")
+tweets_file <- paste(wd,"/tweets_spain_",searchTerm,".csv", sep = "")
 write.table(geocoded, tweets_file, sep=",", row.names = FALSE)
 
 # Creació d'un objecte SpatialPointsDataFrame
@@ -95,9 +95,10 @@ n <- sum(spain$tweets)
 spain$tweets <- spain$tweets / n
 
 # Representació gràfica
-title <- paste("Percentatge de tuits amb:", searchTerm)
-tmap::qtm(spain, fill = "tweets", fill.palette="Reds") +
-  tm_legend(legend.position = c("right", "bottom"),
-            main.title = titol,
-            main.title.position = "center")
+title <- paste("Distribució de l'etiqueta", searchTerm)
+tmap::qtm(spain, fill = "tweets", fill.palette="Reds", fill.title="% tuits") +
+  tm_legend(legend.position = c(0.8, 0.02),
+            main.title = title,
+            main.title.position = "center") +
+  tm_credits("@vboix10", position = c("left", "bottom"))
 
