@@ -2,9 +2,9 @@
 
 ### Positius confirmats per comarca
 
-[Mapa interactiu](https://storage.googleapis.com/covid19catalunya/PositiusperComarca27.html)
+[Mapa interactiu](https://storage.googleapis.com/covid19catalunya/PositiusCovid19Setmana27perComarca.html)
 
-[![Mapa positius per comarca](PositiusCovid19perComarca.png)](https://storage.googleapis.com/covid19catalunya/PositiusperComarca27.html)
+[![Mapa positius per comarca](PositiusCovid19Setmana27perComarca.png)](https://storage.googleapis.com/covid19catalunya/PositiusCovid19Setmana27perComarca.html)
 
 Setmana del 6-12 juliol de 2020
 
