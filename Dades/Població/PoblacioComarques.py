@@ -25,4 +25,4 @@ poblacioComarques = pd.DataFrame({'codi': codi, 'comarca': comarca, 'poblacio':p
 
 # Exportació de dades
 dir_path = os.path.dirname(os.path.realpath(__file__))
-poblacioComarques.to_csv(dir_path + '/PoblacioComarques.csv')
+poblacioComarques.to_csv(dir_path + '/PoblacioComarques.csv', index=False)
