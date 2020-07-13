@@ -12,6 +12,7 @@ root = et.fromstring(responses.content)
 
 # Poblacions
 poblacio = root[1][0][1].text.split(", ")
+poblacio = [ int(x) for x in poblacio ]
 
 # Codi i nom de comarca
 codi = []
