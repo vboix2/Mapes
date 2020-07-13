@@ -1,10 +1,12 @@
 # Afectació del covid19 a Catalunya
 
-### Positius confirmats per municipi
+### Positius confirmats per comarca
 
-[Mapa interactiu](https://storage.googleapis.com/covid19catalunya/PositiusperMunicipi.html)
+[Mapa interactiu](https://storage.googleapis.com/covid19catalunya/PositiusperComarca27.html)
 
-[![Mapa positius per municipi](PositiusCovid19perMunicipi.png)](https://storage.googleapis.com/covid19catalunya/PositiusperMunicipi.html)
+[![Mapa positius per comarca](PositiusCovid19perComarca.png)](https://storage.googleapis.com/covid19catalunya/PositiusperComarca27.html)
+
+Setmana del 6-12 juliol de 2020
 
 ### Fonts de dades
 

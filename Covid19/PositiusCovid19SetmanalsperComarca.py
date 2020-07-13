@@ -11,8 +11,7 @@ import requests
 from bokeh.io import show
 from bokeh.models import (ColorBar, GeoJSONDataSource, HoverTool, LinearColorMapper)
 from bokeh.palettes import brewer
-from bokeh.plotting import figure
-
+from bokeh.plotting import figure, output_file
 
 # ----- Importació de dades ------
 
@@ -119,6 +118,8 @@ p.add_tools(HoverTool(renderers = [p_comarques],
                                   ('Positius per 100.000 hab','@PercentatgeCasos'),
                                   ('Nombre de positius','@NumCasos'),]))
 p.add_layout(color_bar, 'below')
+
+output_file("PositiusCovid19SetmanalsperComarca.html", title="Positius de Covid19 per comarca")
 
 show(p)
 
